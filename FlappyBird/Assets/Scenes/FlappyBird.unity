@@ -1184,12 +1184,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49cab19631d2b024995423a964b07c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentsPoints: {fileID: 0}
-  gameOverPoints: {fileID: 0}
-  highscorePoints: {fileID: 0}
+  currentsPoints: {fileID: 574941508}
+  gameOverPoints: {fileID: 1142403914}
+  highscorePoints: {fileID: 590907930}
   gameOverPanel: {fileID: 204056293}
   rb2D: {fileID: 776115316}
-  jumpForce: 12.5
+  jumpForce: 8
 --- !u!1 &837279845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1672,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1153014479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 776115318}
+        m_TargetAssemblyTypeName: BirdController, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1153014479
 MonoBehaviour:
   m_ObjectHideFlags: 0
