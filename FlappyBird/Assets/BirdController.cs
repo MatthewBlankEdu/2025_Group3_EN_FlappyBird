@@ -26,7 +26,7 @@ public class BirdController : MonoBehaviour
                 hasStarted = true;
             }
             
-            rb2D.velocity = Vector2.zero;
+            rb2D.linearVelocity = Vector2.zero;
             rb2D.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
     }
